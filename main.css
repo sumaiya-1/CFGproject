@@ -1,28 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     background-color: ivory;
 }
 
 .nav-container {
-    background-color: pink;
-    border-bottom: 1px solid black;
-    position: fixed;
+    background-color: transparent;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    
+    color: white; /* Change nav bar text colour. Choose a different font */
+}
+
+.nav-container:hover {
+    background-color: rgb(11, 11, 11);
+    opacity: 0.7;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
     padding: 5px;
 }
 
-.logo {
-    margin-top: 10px;
-    margin-bottom: -60px;
-    margin-left: 20px;
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+}
+
+
+.title {
+    float: left;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
 .wrapper {
@@ -31,8 +49,10 @@ body {
     min-width: 10px;
     align-items: center;
     justify-content: center;
+    color: black;
+    padding-top: 13px;
 }
-
+/* Search bar */
 .wrapper input::placeholder,
 .wrapper input {
     color: transparent;
@@ -44,24 +64,23 @@ body {
     color: rgb(63, 62, 62);
     padding-left: 5px;
 }
-.search {
+.search-bar {
     border: 1px solid grey;
     border-radius: 5px;
-    height: 20px;
+    height: 28px;
     width: 30px;
     padding: 2px;
 }
 
-
 ion-icon {
     position: absolute;
-    right: 10px;
+    right: 7px;
     width: 17px;
     opacity: 0.75;
     cursor: pointer;
 }
-.search:hover {
-    width: 25vw;
+.search-bar:hover {
+    width: 20vw;
     color: black;
     transition: 0.5s;
 }
@@ -71,22 +90,62 @@ h1 {
     text-align: center;
 }
 
-.map_image {
+/* Moving background image*/
+.background-img {
+    background-image: url(switzerland.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 830px;
+    position: relative;
+    animation: motion 50s linear infinite alternate;
+    box-shadow: none;
+    background-size: cover;
+}
+.background-img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .background-img > * {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .moving-img {
+    background: url("https://i.postimg.cc/fyQs9bT2/views.png") no-repeat;
+    background-color: #edcca6;
+    animation: motion 0.5s linear infinite alternate;
+    background-size: cover;
+    position: relative;
+    box-shadow: none;
+  }
+  
+  @keyframes motion {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+/* Tourist map of switzerland */
+.map-img-div {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+.map-img {
+    width: 80%;
+    height: 750px;
 }
 
-.map_image img {
-    width: 800px;
-}
-
-
-
-@media (max-width: 800px ) {
-    .logo {
-        width: 0px;
-    }
-}
 
 /* popular cities / areas section */
 .top-destination {
@@ -96,10 +155,10 @@ h1 {
 .city-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* can remove this */
+    justify-content: center; /* can remove this if need to*/
 }
 
-.container {
+.img-container {
     position: relative;
     width: 400px;
     height: 430px;
@@ -113,30 +172,40 @@ h1 {
     height: 100%;
 }
 
-.overlay {
+.img-overlay {
     position: absolute;
     top: 0; 
     left: 0; 
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #ffffff;
     font-size: 'Arial', sans-serif; 
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: opacity 0.25s;
 }
 
-.text {
-    font-size: 20px;
-    margin-top: 7px;
-    text-align: center;
+.img-overlay > p { 
+    transform: translateY(20px);
+    transition: transform 0.25s;
 }
 
-.overlay:hover {
+.img-overlay:hover {
     opacity: 1;
 }
 
-.container:hover {
+.img-overlay:hover > p {
+    transform: translateY(0);
+}
+
+.img-text {
+    font-size: 2em;
+}
+
+.img-container:hover {
     transform: scale(0.99);
     transition: ease-in;
 }
