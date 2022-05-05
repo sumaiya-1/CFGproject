@@ -149,7 +149,8 @@ h1 {
 
 /* popular cities / areas section */
 .top-destination {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .city-flex {
@@ -158,18 +159,10 @@ h1 {
     justify-content: center; /* can remove this if need to*/
 }
 
-.img-container {
-    position: relative;
-    width: 400px;
-    height: 430px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
 .city {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    display: block;
+    height: 500px; /* can change this*/
+    object-fit: contain; /* can change this to fill / cover so image fills div*/
 }
 
 .img-overlay {
@@ -210,15 +203,5 @@ h1 {
     transition: ease-in;
 }
 
-@media (max-width: 800px) {
-    .city {
-        width: 200px;
-        height: 215px;
-    }
-    .container {
-        width: 200px;
-        height: 215px;
-    }
-}
 
 
