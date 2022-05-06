@@ -9,7 +9,39 @@
         <link rel="stylesheet" href="main.css"/>
     </head>
     <body>
-        <div class="background-img"></div> 
+        <!-- Carousel and moving image -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="background-img"></div> 
+                </div>
+                <div class="carousel-item">
+                    <div class="background-img-1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="background-img-2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="background-img-3"></div>
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>       
+
         <header>
             <nav class="nav-container">
                 <h1 class="title"> Title </h1>

@@ -101,7 +101,37 @@ h1 {
     box-shadow: none;
     background-size: cover;
 }
-.background-img::after {
+.background-img-1 {
+    background-image: url(switzerland-autumn.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 830px;
+    position: relative;
+    animation: motion 50s linear infinite alternate;
+    box-shadow: none;
+    background-size: cover;
+}
+.background-img-2 {
+    background-image: url(switzerland-glacier.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 830px;
+    position: relative;
+    animation: motion 50s linear infinite alternate;
+    box-shadow: none;
+    background-size: cover;
+}
+.background-img-3 {
+    background-image: url(switzerland-glacier3000.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 830px;
+    position: relative;
+    animation: motion 50s linear infinite alternate;
+    box-shadow: none;
+    background-size: cover;
+}
+.background-img .background-img-1 .background-img-2 .background-img-3::after {
     content: "";
     display: block;
     width: 100%;
@@ -112,14 +142,12 @@ h1 {
     z-index: 0;
   }
   
-  .background-img > * {
+  .background-img .background-img-1 .background-img-2 .background-img-3 > * {
     position: relative;
     z-index: 10;
   }
   
   .moving-img {
-    background: url("https://i.postimg.cc/fyQs9bT2/views.png") no-repeat;
-    background-color: #edcca6;
     animation: motion 0.5s linear infinite alternate;
     background-size: cover;
     position: relative;
