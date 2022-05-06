@@ -184,13 +184,19 @@ h1 {
 .city-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* can remove this if need to*/
+    justify-content: center; /* can remove this */
 }
 
 .city {
+    position: relative;
     display: block;
-    height: 500px; /* can change this*/
-    object-fit: contain; /* can change this to fill / cover so image fills div*/
+    width: 400px;
+    height: 430px;
+}
+
+.img-container {
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .img-overlay {
@@ -225,11 +231,19 @@ h1 {
 .img-text {
     font-size: 2em;
 }
-
 .img-container:hover {
     transform: scale(0.99);
     transition: ease-in;
 }
 
-
-
+@media (max-width: 800px) {
+    .map-img {
+        width: 80vw;
+        height: 400px;
+    }
+    .city {
+        width: 200px;
+        height: 215px;
+    }
+    
+}
