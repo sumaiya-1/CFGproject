@@ -38,6 +38,13 @@ body {
     text-decoration: none;
     color: white;
     padding-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    /*Add font-family*/
+}
+
+.nav-bar a:hover {
+    color: rgb(125, 175, 190)
 }
 
 .title {
@@ -57,7 +64,7 @@ body {
 }
   
 .openButton:hover {
-    background: #292929;
+    background: rgb(125, 175, 190);
     border-radius: 5px;
 }
 
