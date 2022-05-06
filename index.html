@@ -1,120 +1,170 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> change Guide</title>
-        <meta charset="UTF-8"/>
-        <meta name="travel site" content="best places to go" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="main.css"/>
-    </head>
-    <body>
-        <!-- Carousel and moving image -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-            </div>
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="background-img"></div> 
-                </div>
-                <div class="carousel-item">
-                    <div class="background-img-1"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="background-img-2"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="background-img-3"></div>
-                </div>
-            </div>
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>       
+  <head>
+    <title>Travel Guide</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="travel site"
+      content="Where to travel in switzerland. Plan your holiday"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Carousel and moving image -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+        ></button>
+      </div>
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="background-img"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="background-img-1"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="background-img-2"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="background-img-3"></div>
+        </div>
+      </div>
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
-        <header>
-            <nav class="nav-container">
-                <h1 class="title"> Title </h1>
-                  <div class="nav-bar">
-                    <a href="#home">Home</a>
-                    <a href="#news">Destinations</a>
-                    <a href="#contact">Plan your trip</a>
-                    <a href="#about">About</a>
-                    <div class="wrapper">
-                        <input class="search-bar" placeholder="Search" type="text"/>
-                        <ion-icon name="search-outline"></ion-icon>
-                    </div>
-                </div>
-              </nav>
-        <main>
-            <!-- Map image -->
-            <div class="map-img-div">
-                <img class="map-img" src="switzerland-map.png" alt="tourist map of switzerland"/>
-            </div>
+    <!-- Nav bar -->
+    <header>
+      <nav class="nav-container">
+        <h1 class="title">Title</h1>
+        <div class="nav-bar">
+          <a href="#home">Home</a>
+          <a href="#news">Destinations</a>
+          <a href="#contact">Plan your trip</a>
+          <a href="#about">About</a>
+          <div class="wrapper">
+            <input class="search-bar" placeholder="Search" type="text" />
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-            <h1 class="top-destination"> Popular Destinations </h1>
-            
-            <!-- Images of cities -->
-            <div class="city-flex">
-                <div class="img-container">
-                    <img class="city" src="zurich-city.png" alt="City of Zurich"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Zurich </p>
-                    </div>
-                </div>
+    <main>
+      <!-- Map image -->
+      <div class="map-img-div">
+        <img
+          class="map-img"
+          src="switzerland-map.png"
+          alt="tourist map of switzerland"
+        />
+      </div>
 
-                <div class="img-container">
-                    <img class="city" src="bern-city.png" alt="City of Bern"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Bern </p>
-                    </div>
-                </div>
+      <h1 class="top-destination">Popular Destinations</h1>
 
-                <div class="img-container">
-                    <img class="city" src="sion-city.png" alt="Castle Notre-Dame de Valere in sion switzerland"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Sion </p>
-                    </div>
-                </div>
+      <!-- Images of cities -->
+      <div class="city-flex">
+        <div class="img-container">
+          <img class="city" src="zurich-city.png" alt="City of Zurich" />
+          <div class="img-overlay">
+            <p class="img-text">Zurich</p>
+          </div>
+        </div>
 
-                <div class="img-container">
-                    <img class="city" src="swiss-alps.png" alt="Matterhorn Zermatt"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Alps </p>
-                    </div>
-                </div>
+        <div class="img-container">
+          <img class="city" src="bern-city.png" alt="City of Bern" />
+          <div class="img-overlay">
+            <p class="img-text">Bern</p>
+          </div>
+        </div>
 
-                <div class="img-container">
-                    <img class="city" src="locarno-city.png" alt="Lake Maggiore in Lacarno"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Locarno </p>
-                    </div>
-                </div>
+        <div class="img-container">
+          <img
+            class="city"
+            src="sion-city.png"
+            alt="Castle Notre-Dame de Valere in sion switzerland"
+          />
+          <div class="img-overlay">
+            <p class="img-text">Sion</p>
+          </div>
+        </div>
 
-                <div class="img-container">
-                    <img class="city" src="geneva-city.png" alt="City of Geneva"/>
-                    <div class="img-overlay">
-                        <p class="img-text"> Geneva </p>
-                    </div>
-                </div>
-            </div>
+        <div class="img-container">
+          <img class="city" src="swiss-alps.png" alt="Matterhorn Zermatt" />
+          <div class="img-overlay">
+            <p class="img-text">Alps</p>
+          </div>
+        </div>
 
-            
-        </main>
-        <footer>
+        <div class="img-container">
+          <img
+            class="city"
+            src="locarno-city.png"
+            alt="Lake Maggiore in Lacarno"
+          />
+          <div class="img-overlay">
+            <p class="img-text">Locarno</p>
+          </div>
+        </div>
 
-        </footer>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+        <div class="img-container">
+          <img class="city" src="geneva-city.png" alt="City of Geneva" />
+          <div class="img-overlay">
+            <p class="img-text">Geneva</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

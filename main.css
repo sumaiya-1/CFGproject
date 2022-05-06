@@ -1,22 +1,24 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     background-color: ivory;
 }
 
 .nav-container {
-    background-color: transparent;
     position: absolute;
+    background-color: transparent;
     top: 0;
     right: 0;
     left: 0;
     color: white; /* Change nav bar text colour. Choose a different font */
+    z-index: 1;
 }
 
 .nav-container:hover {
@@ -28,6 +30,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
+    overflow: hidden;
 }
 
 .nav-bar a {
@@ -35,7 +38,6 @@ body {
     color: white;
     padding-top: 15px;
 }
-
 
 .title {
     float: left;
@@ -79,6 +81,7 @@ ion-icon {
     opacity: 0.75;
     cursor: pointer;
 }
+
 .search-bar:hover {
     width: 20vw;
     color: black;
@@ -231,6 +234,7 @@ h1 {
 .img-text {
     font-size: 2em;
 }
+
 .img-container:hover {
     transform: scale(0.99);
     transition: ease-in;
