@@ -1,0 +1,23 @@
+/* Nav-bar for page 2*/
+.nav-container2 {
+    color: black;
+}
+
+.nav-bar2 a {
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+}
+
+/* Search button for page 2*/
+.openButton2 {
+    color: black;
+    border: none;
+    background-color: transparent;
+    padding-top: 19px;
+}
+
+.icon2 {
+    color: black;
+    font-size: 20px
+ }
