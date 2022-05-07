@@ -152,6 +152,7 @@ h1 {
     animation: motion 50s linear infinite alternate;
     box-shadow: none;
     background-size: cover;
+    z-index: 1;
 }
 .background-img-1 {
     background-image: url(switzerland-autumn.png);
@@ -162,6 +163,7 @@ h1 {
     animation: motion 50s linear infinite alternate;
     box-shadow: none;
     background-size: cover;
+    z-index: 1;
 }
 .background-img-2 {
     background-image: url(switzerland-glacier.png);
@@ -172,6 +174,7 @@ h1 {
     animation: motion 50s linear infinite alternate;
     box-shadow: none;
     background-size: cover;
+    z-index: 1;
 }
 .background-img-3 {
     background-image: url(switzerland-glacier3000.png);
@@ -182,6 +185,7 @@ h1 {
     animation: motion 50s linear infinite alternate;
     box-shadow: none;
     background-size: cover;
+    z-index: 1;
 }
 .background-img .background-img-1 .background-img-2 .background-img-3::after {
     content: "";
@@ -194,10 +198,11 @@ h1 {
     z-index: 0;
   }
   
-  .background-img .background-img-1 .background-img-2 .background-img-3 > * {
+  /* Can be out back if needed
+   .background-img .background-img-1 .background-img-2 .background-img-3 > * {
     position: relative;
     z-index: 10;
-  }
+  } */
   
   .moving-img {
     animation: motion 0.5s linear infinite alternate;
@@ -225,6 +230,7 @@ h1 {
     width: 80%;
     height: 750px;
 }
+
 
 
 /* popular cities / areas section */
