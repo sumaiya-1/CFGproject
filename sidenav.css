@@ -1,0 +1,83 @@
+/* CSS page for side nav bar only */
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/ 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; 
+}
+
+/* Nav menu links*/
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+a[href*="Home"]{
+    margin-top: 90px;
+}
+
+.side-nav a:hover {
+    color: rgb(125, 175, 190);;
+
+}
+
+.side-nav .side-nav-closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.side-nav-closebtn {
+    margin-top: 79px;
+}
+
+.open-side-btn {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    cursor: pointer;
+    font-size: 29px;
+    z-index: 2;
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 801px) {
+    .open-side-btn {
+        visibility: hidden;
+    }
+}
+
+
+/* styling side nav search bar*/
+.side-open-search-button {
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    margin-left: 33px;
+    margin-top: 10px;
+}
+
+.sideclosebtn {
+    margin-top: 50px;
+}
+

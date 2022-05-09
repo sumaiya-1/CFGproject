@@ -1,12 +1,15 @@
 /* Nav-bar for page 2*/
-.nav-container2 {
-    color: black;
+
+.nav-bar-text > a {
+  color: black
 }
 
-.nav-bar2 a {
-    text-decoration: none;
-    color: black;
-    padding-top: 15px;
+.nav-container:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+
 }
 
 /* Search button for page 2*/
@@ -15,6 +18,11 @@
     border: none;
     background-color: transparent;
     padding-top: 19px;
+}
+
+.openButton2 > ion-icon {
+  color: black;
+  font-size: 20px;
 }
 
 .icon2 {
@@ -33,6 +41,10 @@
  .headerfont {
      font-family: 'Koulen', cursive;
      font-size: 100px;
+ }
+
+ .headerfont h1 {
+   margin-top: 150px;
  }
 
  /* slideshowpage2 */

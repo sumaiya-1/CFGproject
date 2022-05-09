@@ -19,19 +19,21 @@ body {
     left: 0;
     color: white; /* Change nav bar text colour. Choose a different font */
     z-index: 1;
+    width: 100%;
 }
 
-
-.nav-container:hover {
-    background-color: rgb(36, 36, 36);
-    opacity: 0.9;
+@media screen and (min-width: 801px) {
+    .nav-container:hover {
+    background-color: rgba(42, 42, 42, 0.9);}
 }
+
 
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
     overflow: hidden;
+    margin-top: -80px;
 }
 
 .nav-bar a {
@@ -41,24 +43,26 @@ body {
     font-size: 20px;
     font-weight: 500;
     /*Add font-family*/
+    margin-right: -100px;
 }
 
 .nav-bar a:hover {
     color: rgb(125, 175, 190)
 }
 
-.title {
-    float: left;
+.title img {
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 15px;
     margin-left: 30px;
-    font-family: 
 }
 
-@media (max-width: 700px) {
-    .title {
-        text-align: center;
-        float: none;
-        margin-bottom: -10px;
+
+@media only screen and (max-width: 800px) {
+    .nav-bar {
+       visibility: hidden;
     }
 }
 
@@ -67,9 +71,15 @@ body {
     background-color: transparent;
     border: none;
     padding: 5px 10px 0px 10px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     margin-top: 10.5px; 
+}
+
+@media screen and (max-width: 1000px) {
+    .openButton {
+        margin-right: -100px;
+    }
 }
   
 .openButton:hover {
@@ -82,22 +92,21 @@ body {
     width: 100%;
     display: none;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
-  }
+}
   
   /* The content */
-  .search-overlay-content {
+.search-overlay-content {
     position: relative;
     top: 46%;
     width: 80%;
     text-align: center;
     margin-top: 30px;
     margin: auto;
-  }
+}
   
   /* Close button */
 .search-bar .closebtn {
@@ -110,7 +119,7 @@ body {
 }
   
 .search-bar .closebtn:hover {
-    color: #ccc;
+    color: rgb(125, 175, 190)
 }
   
 /* Style the search field */
@@ -139,7 +148,7 @@ body {
 }
   
 .search-bar button:hover {
-    background: #bbb;
+    background: rgb(125, 175, 190);
 }
 
 ion-icon {
@@ -304,7 +313,7 @@ h1 {
     transition: ease-in;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .map-img {
         width: 80vw;
         height: 400px;
