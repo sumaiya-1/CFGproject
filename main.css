@@ -325,6 +325,89 @@ h1 {
     
 }
 
+/* Blog section */
+.blog {
+    margin-top: 50px;
+}
+
+.blog-text{
+    text-align: center;
+}
+.blog-segment {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blog-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.blog-section img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px ;
+}
+
+.blog-section p {
+    position:absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    visibility: hidden;
+}
+
+.blog-section:hover p {
+    visibility: visible;
+}
+
+.blog-overlay {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    transition: .5s ease;
+    margin: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.blog-overlay:hover {
+    opacity: 1;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+
+
 .footer-section {
     position: relative;
     background-color: rgb(36, 36, 36);
