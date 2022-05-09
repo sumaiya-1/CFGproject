@@ -48,7 +48,7 @@
  }
 
  .margin-section {
-   margin-top: 350px;
+   margin-top: -100px;
  }
 
  /* slideshowpage2 */
@@ -98,22 +98,25 @@
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 5px 12px;
   position: absolute;
   top: 0;
 }
+
+
 
 /* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
+  padding: 10px 16px;
   color: white;
 }
 
@@ -123,21 +126,17 @@
   clear: both;
 }
 
-.row {
-  width: 100%;
-  height: 100px;
-}
 
 /* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
-  height: 100px;
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  height: 150px;
 }
 
 .active,
