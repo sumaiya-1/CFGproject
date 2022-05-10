@@ -80,12 +80,12 @@ body {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
+  position: fixed; 
   top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -147,4 +147,11 @@ body {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.ssimgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
