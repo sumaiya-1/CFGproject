@@ -329,6 +329,13 @@ h1, h2 {
     
 }
 
+@media only screen and (max-width: 500px) {
+    .map-img {
+        width: 480px;
+        height: 350px;
+    }
+}
+
 /* Blog section */
 
 .blog-text p {
@@ -551,7 +558,7 @@ div.scrollmenu a:hover {
     color: white;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
     .footer-button {
         width: 150px;
         height: 40px;
