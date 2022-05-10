@@ -559,6 +559,9 @@ div.scrollmenu a:hover {
 }
 
 @media screen and (max-width: 500px) {
+    .footer-section {
+        height: 300px;
+    }
     .footer-button {
         width: 150px;
         height: 40px;
