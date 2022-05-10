@@ -4,17 +4,15 @@
     <title>Travel Guide</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="travel site"
-      content="Where to travel in switzerland. Plan your holiday"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <meta name="travel site" content="Where to travel in switzerland. Plan your holiday"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="sidenav.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <script src="index.js"></script>
@@ -85,8 +83,9 @@
       <div> 
         <div id="mySideNav" class="side-nav">
           <a href="javascript:void(0)" class="side-nav-closebtn" onclick="closeNav()">x</a>
-          <a href="#Home">Home</a>
+          <a href="#Home" class="home">Home</a>
           <a href="#destinations">Destinations</a>
+          <a href="#blog">Blog</a>
           <a href="#plan">Plan your trip</a>
           <a href="#about">About</a>
           <div id="mySearchBar" class="search-bar">
@@ -135,6 +134,7 @@
 
     <main>
       <!-- Map image -->
+      <h2> Tourist Map </h2>
       <section class="map-img-div">
         <img class="map-img" src="/Images/switzerland-map.png" alt="tourist map of switzerland" usemap="#image-map"/>
         <map name="image-map">
@@ -207,65 +207,146 @@
 
       <!-- Blog section -->
       <div class="blog-text">
-        <h2>Latest blogs</h2>
-        <p> Find out what others have to say about vacationing in switzerland</p>
+        <h2>Latest Blogs</h2>
+        <p> Read our latest blogs and find out more about why vacationing in Switzerland is an oppurtunity to not miss</p>
       </div>
       <div class="blog scrollmenu" id="blog">
         <div class="blog-segment">
           <div class="blog-section">
             <figure>
-              <img src="/Images/city-center.png" alt="Shopping in the city centers"/>
-              <h5> Shopping spree </h5>
-              <p> City centers are the best place to shop. Make sure you have enough empty space in your luggage as you will definitely be going home with your luggage over the weight limit. </p>
+              <img src="/Images/shopping.png" alt="Shopping in the city centers"/>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Shopping</h5>
+                    </div>
+                    <div class="flip-card-back">
+                      <p> Shopping is a must on holidays. Find out which city centers are the best for your shopping spree. </p>
+                    </div>
+                </div>
+              </div>
             </figure>
            </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/spring.png" alt="Spring in Switzerland"/>
-              <h5> Spring in Switzerland </h5>
-              <p>  </p>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Spring in Switzerland </h5>
+                    </div>
+                    <div class="flip-card-back">
+                      <p> Spring is the best time for the nature and photography lovers. Find out more about Narcissus blooms or spring festivals. </p>
+                    </div>
+                </div>
+              </div>
             </figure>
           </div>
+
           <div class="blog-section">
             <figure>
               <img src="/Images/beaches.png" alt="Beaches to visit in Switzerland"/>
-              <h5> Beaches </h5>
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h5> Beaches </h5>
+                      </div>
+                      <div class="flip-card-back">
+                          <p> Looking to spend your time sunbathing then the beach is the best place for you. Find out the best beaches to go to when you come to visit. </p>
+                      </div>
+                  </div>
+              </div>
             </figure>
           </div>
+
           <div class="blog-section">
             <figure>
               <img src="/Images/summer.png" alt="Summer in Switzerland"/>
-              <h5> Summer in Switzerland </h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Summer in Switzerland </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> Summer is all about hiking and outdoor activites. Find out more about the hiking with a scenery or the fun activites to take part in. </p>
+                    </div>
+                </div>
+            </div>
             </figure>
           </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/food.png" alt="Restaurants to visit"/>
-              <h5> Restaurants / Food </h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Restaurants / Food </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> Are you a food lover. Click here to find out which restaurants are worth your money.  </p>
+                    </div>
+                </div>
+            </div>
             </figure>
           </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/autumn.png" alt="Autumn in Switzerland"/>
-              <h5> Autumn in Switzerland </h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Autumn in Switzerland </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> Autumn hikes are the best with mid tempatures and cool breezes. Take the Glacier express and enjoy the stunning views.</p>
+                    </div>
+                </div>
+            </div>
             </figure>
           </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/historical.png" alt="Must visit historical places"/>
-              <h5> History is a must</h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Historical sites </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> Do you enjoy learning about history. Find out about the 10 best historical sites to explore when in Switzerland. </p>
+                    </div>
+                </div>
+            </div>
             </figure>
           </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/winter.png" alt="Winter in Switzerland"/>
-              <h5> Winter in Switzerland </h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Winter in Switzerland </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> Winter brings the magic of snow-covered peaks and Christmas markets. Wear your layers as the temperatures do drop very low. </p>
+                    </div>
+                </div>
+            </div>
             </figure>
           </div>
           <div class="blog-section">
             <figure>
               <img src="/Images/ski.png" alt="Where to ski"/>
-              <h5> Ski </h5>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h5> Leisure </h5>
+                    </div>
+                    <div class="flip-card-back">
+                        <p> There is something to do all year round. From skiing in the winter to paraglading in the summer. Click here to find out more. </p>
+                    </div>
+                </div>
+            </div>
             </figure>
            </div>
         </div>
