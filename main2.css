@@ -4,24 +4,27 @@
   margin-right: -110px;
 }
 .nav-bar-text > a {
-  color: black;
+  color: white;
 }
 
 .nav-container:hover {
-  background-color: transparent;
+  background-color: black;
+}
+
+.nav-container {
+  background-color: black;
 }
 
 
 /* Search button for page 2*/
 .openButton2 {
-    color: black;
     border: none;
     background-color: transparent;
     padding-top: 19px;
 }
 
 .openButton2 > ion-icon {
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
