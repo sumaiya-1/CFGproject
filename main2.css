@@ -56,6 +56,56 @@ body {
    margin-top: -100px;
  }
 
+ /* header/cutout image for page 2*/
+ .cutout-container {
+  background-image: url("https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg");
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  margin-top: 2%;
+}
+
+
+.cutouttext {
+  background-color: black;
+  color: white;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+/* midpage header/cutout image for page 2*/
+.midcutout-container {
+  background-image: url("https://foreignpolicy.com/wp-content/uploads/2020/11/GettyImages-1207647039.jpg?resize=1000,667&quality=90");
+  background-size: cover;
+  position: relative;
+  height: 150px;
+}
+
+
+.midcutouttext {
+  background-color:  black;
+  color: rgb(255, 255, 255);
+  font-size: 5vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
  /* slideshowpage2 */
  * {
   box-sizing: border-box;
@@ -80,14 +130,14 @@ body {
 .prev,
 .next {
   cursor: pointer;
-  position: fixed; 
+  position: absolute; 
   top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: rgb(255, 255, 255);
+  color: rgb(42, 24, 200);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
