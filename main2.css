@@ -58,7 +58,7 @@ body {
 
  /* header/cutout image for page 2*/
  .cutout-container {
-  background-image: url("https://www.planetware.com/wpimages/2019/10/switzerland-in-pictures-most-beautiful-places-matterhorn.jpg");
+  background-image: url("images/geneva-city.png");
   background-size: cover;
   position: relative;
   height: 400px;
@@ -67,8 +67,8 @@ body {
 
 
 .cutouttext {
-  background-color: black;
-  color: white;
+  background-color: rgba(241, 242, 246, 0.952);
+  color: rgb(8, 7, 8) ;
   font-size: 10vw; 
   font-weight: bold;
   margin: 0 auto;
@@ -84,7 +84,7 @@ body {
 
 /* midpage header/cutout image for page 2*/
 .midcutout-container {
-  background-image: url("https://foreignpolicy.com/wp-content/uploads/2020/11/GettyImages-1207647039.jpg?resize=1000,667&quality=90");
+  background-image: url("images/summer.png");
   background-size: cover;
   position: relative;
   height: 150px;
