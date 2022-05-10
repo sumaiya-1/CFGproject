@@ -1,16 +1,16 @@
 /* Nav-bar for page 2*/
 
+.nav-bar-text {
+  margin-right: -110px;
+}
 .nav-bar-text > a {
-  color: black
+  color: black;
 }
 
 .nav-container:hover {
   background-color: transparent;
 }
 
-@media screen and (max-width: 800px) {
-
-}
 
 /* Search button for page 2*/
 .openButton2 {

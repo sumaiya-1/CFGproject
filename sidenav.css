@@ -22,11 +22,13 @@
     display: block;
     transition: 0.3s;
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
-a[href*="Home"]{
+.home {
     margin-top: 90px;
 }
+
 
 .side-nav a:hover {
     color: rgb(125, 175, 190);;
