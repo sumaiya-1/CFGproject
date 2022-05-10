@@ -563,18 +563,17 @@ div.scrollmenu a:hover {
     .footer-section {
         height: 300px;
     }
+
     .footer-button {
         width: 150px;
         height: 40px;
         font-size: 13px;
+        margin-bottom: 20px;
     }
 
     .fa {
         width: 10px;
         height: 10px;
-        font-size: 10px;
-        padding: 10px;
     }
-
 }
 
