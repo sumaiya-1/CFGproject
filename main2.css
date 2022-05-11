@@ -6,6 +6,7 @@ html,body {
   }
 
 /* Nav-bar for page 2*/
+
 .nav-bar-text > a {
   color: white;
   margin-right: -150px;
@@ -14,6 +15,58 @@ html,body {
 .nav-container:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.nav-container2 {
+  position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-bar2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  overflow: hidden;
+  margin-top: -80px;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-bar2 a {
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: -100px;
+}
+
+.nav-bar2 a:hover {
+  color: rgb(125, 175, 190);
+}
+
+.openButton2 {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10.5px; 
+}
+
+@media screen and (max-width: 1000px) {
+    .openButton2 {
+        margin-right: -100px;
+    }
+}
+
+.icon-color {
+  color: black;
+}
+
 
 /* Drop down */
 .btn {
@@ -37,19 +90,8 @@ html,body {
   color: rgb(125, 175, 190);
 }
 
-
-
 /* Search button for page 2*/
-.openButton2 {
-    border: none;
-    background-color: transparent;
-    padding-top: 19px;
-}
 
-.openButton2 > ion-icon {
-  color: white;
-  font-size: 20px;
-}
 
 .icon2 {
     color: black;
@@ -229,4 +271,9 @@ html,body {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+}
+
+/* About page css */
+.space-top {
+  margin-top: 150px;
 }
