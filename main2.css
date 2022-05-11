@@ -15,6 +15,27 @@ html,body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Drop down */
+.btn {
+  background-color: black;
+  border: 1px solid black;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
+  margin-left: 19px;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+  background-color: black;
+  border: 1px solid black;
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
+.btn:hover{
+  color: rgb(125, 175, 190);
+}
 
 
 
@@ -123,6 +144,11 @@ html,body {
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
+}
+
+/* Aligning text */
+.text-justify {
+  text-align: justify;
 }
 
 /* Next & previous buttons */
