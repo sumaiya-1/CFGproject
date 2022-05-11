@@ -8,10 +8,6 @@ html {
     padding: 0;
 }
 
-body {
-    background-color: white;
-}
-
 .nav-container {
     position: absolute;
     background-color: transparent;
@@ -23,7 +19,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 768px) {
     .nav-container:hover {
     background-color: rgba(0, 0, 0, 0.8);}
 }
@@ -61,7 +57,7 @@ body {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .nav-bar {
        visibility: hidden;
     }
@@ -156,6 +152,31 @@ ion-icon {
    color: white;
 }
 
+/* Drop down */
+.btn {
+    background-color: black;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 19px;
+  }
+  
+  .btn:hover, .btn:focus, .btn:active{
+    background-color: black;
+    border: 1px solid black;
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+  }
+  
+  .btn:hover{
+    color: rgb(125, 175, 190);
+  }
+  
+  .dropdown-menu li a{
+    color: black;
+  }
 
 /* Moving background image*/
 .background-img {
@@ -241,7 +262,7 @@ h1, h2 {
     text-align: center;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .map-img-div {

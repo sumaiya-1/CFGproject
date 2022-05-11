@@ -57,14 +57,26 @@
     color: white;
 }
 
+.open-side-btn2 {
+    position: absolute; 
+    top: 5%;
+    right: 4%;
+    cursor: pointer;
+    font-size: 29px;
+    z-index: 2;
+    color: black;
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .side-nav {padding-top: 15px;}
     .side-nav a {font-size: 18px;}
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 768px) {
     .open-side-btn {
+        visibility: hidden;
+    }
+    .open-side-btn2 {
         visibility: hidden;
     }
 }
