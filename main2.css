@@ -58,7 +58,7 @@ body {
 
  /* header/cutout image for page 2*/
  .cutout-container {
-  background-image: url("images/geneva-city.png");
+  background-image: url("Images/geneva-city.png");
   background-size: cover;
   position: relative;
   height: 400px;
@@ -84,7 +84,7 @@ body {
 
 /* midpage header/cutout image for page 2*/
 .midcutout-container {
-  background-image: url("images/summer.png");
+  background-image: url("Images/summer.png");
   background-size: cover;
   position: relative;
   height: 150px;
