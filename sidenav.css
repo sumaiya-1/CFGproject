@@ -63,7 +63,7 @@
     .side-nav a {font-size: 18px;}
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1000px) {
     .open-side-btn {
         visibility: hidden;
     }
