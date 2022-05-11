@@ -1,12 +1,14 @@
+/* Removing white space on right side of page */
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
+
 /* Nav-bar for page 2*/
-body {
-  overflow-x: hidden;
-}
-.nav-bar-text {
-  margin-right: -110px;
-}
 .nav-bar-text > a {
   color: white;
+  margin-right: -150px;
 }
 
 .nav-container:hover {

@@ -48,13 +48,13 @@
 }
 
 .open-side-btn {
-    position: absolute;
+    position: fixed; /* can change to absolute if not wanting it fixed on side of page*/
     top: 5%;
     right: 4%;
     cursor: pointer;
     font-size: 29px;
     z-index: 2;
-    color: black;
+    color: white;
 }
 
 
