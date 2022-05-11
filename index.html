@@ -85,7 +85,19 @@
         <div id="mySideNav" class="side-nav">
           <a href="javascript:void(0)" class="side-nav-closebtn" onclick="closeNav()">x</a>
           <a href="#Home" class="home">Home</a>
-          <a href="#destinations">Destinations</a>
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Destinations
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index2.html">Zurich</a></li>
+              <li><a class="dropdown-item" href="index3.html">Bern</a></li>
+              <li><a class="dropdown-item" href="#">Sion</a></li>
+              <li><a class="dropdown-item" href="#">Alps</a></li>
+              <li><a class="dropdown-item" href="#">Locarno</a></li>
+              <li><a class="dropdown-item" href="#">Geneva</a></li>
+            </ul>
+          </div>
           <a href="#blog">Blog</a>
           <a href="#plan">Plan your trip</a>
           <a href="about.html">About</a>
@@ -365,7 +377,7 @@
           <p> Site Map </p>
           </div>
           <div class="footer-content">
-            <button class="footer-button"> Register for newsletter </button>
+            <a href="register.html"><button class="footer-button"> Register for newsletter </button> </a>
           </div>
           <div class="footer-icons">
             <div class="fa-icon">
