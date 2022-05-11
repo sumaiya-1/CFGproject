@@ -10,12 +10,10 @@ body {
 }
 
 .nav-container:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.nav-container {
-  background-color: black;
-}
+
 
 
 /* Search button for page 2*/
@@ -61,8 +59,7 @@ body {
   background-image: url("Images/geneva-city.png");
   background-size: cover;
   position: relative;
-  height: 400px;
-  margin-top: 2%;
+  height: 420px;
 }
 
 
