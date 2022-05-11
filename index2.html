@@ -23,7 +23,10 @@
 <body>
   <script src="index.js"></script>
   <script src="index2.js"></script>
-
+  <!-- Container cutout section -->
+  <div class="cutout-container">
+    <div class="cutouttext">ZURICH</div>
+  </div>
    <!-- Nav bar -->
    <header>
     <!-- Nav bar To show on small screen-->
@@ -31,7 +34,7 @@
       <div id="mySideNav" class="side-nav">
         <a href="javascript:void(0)" class="side-nav-closebtn" onclick="closeNav()">x</a>
         <a href="index.html" class="home">Home</a>
-        <a href="#destination">Destinations</a>
+        <a href="##attractions">Attractions</a>
         <a href="#blog">Blog</a>
         <a href="#plan">Plan your trip</a>
         <a href="#about">About</a>
@@ -58,7 +61,7 @@
       </div>
       <div class="nav-bar nav-bar-text nav-bar-margin">
         <a href="index.html">Home</a>
-        <a href="#destinations">Destinations</a>
+        <a href="#attractions">Attractions</a>
         <a href="#blog">Blog</a>
         <a href="#plan">Plan your trip</a>
         <a href="#about">About</a>
@@ -81,10 +84,6 @@
 
   <main>
 <br>
-    <div class="cutout-container">
-      <div class="cutouttext">ZURICH</div>
-    </div>
-
 
         <div class="container-fluid">
 
@@ -141,7 +140,7 @@
 <br>
 <br>
 
-<div class="midcutout-container">
+<div class="midcutout-container" id="attractions">
   <div class="midcutouttext">ATTRACTIONS</div>
 </div>
     <!-- Can introduce if the image header doesn't work well in practice 
@@ -212,6 +211,140 @@
     <div class="column">
       <img class="demo cursor" src="Images\ZurichMarketSquare.jpg" style="width:100%" onclick="currentSlide(6)" alt="Zurich Market Square">
     </div>
+  </div>
+</div>
+
+<!-- Blog section for Zurich -->
+<div class="blog-text" id="blog">
+  <h2>Latest Blogs</h2>
+  <p> Read our latest blogs on the best tours Zurich has to offer. </p>
+</div>
+<div class="blog scrollmenu">
+  <div class="blog-segment">
+    <div class="blog-section">
+      <figure>
+        <img src="Images/mount-titlis.png" alt="Shopping in the city centers"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Mount Titlis Day Tour </h5>
+              </div>
+              <div class="flip-card-back">
+                <p> A chairlift ride on the Ice Flyer or slide down the Glacier Park snow slide is only one of many activites to do on this tour.</p>
+              </div>
+          </div>
+        </div>
+      </figure>
+     </div>
+    <div class="blog-section">
+      <figure>
+        <img src="Images/swiss-villages.png" alt="Spring in Switzerland"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Swiss Villages </h5>
+              </div>
+              <div class="flip-card-back">
+                <p> A day trip to the swiss villages is one not to miss. Travel into the heart of the Bernese Oberland to explore Interlaken and Grindelwald.</p>
+              </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="blog-section">
+      <figure>
+        <img src="Images/rhine-falls.png" alt="Beaches to visit in Switzerland"/>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h5> Rhine Falls </h5>
+                </div>
+                <div class="flip-card-back">
+                    <p> Travel from Zurich to see the Rhine Falls and the historical Stein am Rhein on a day of sightseeing. </p>
+                </div>
+            </div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="blog-section">
+      <figure>
+        <img src="Images/mount-rigi.png" alt="Summer in Switzerland"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Mount Rigi / Lake Lucerne </h5>
+              </div>
+              <div class="flip-card-back">
+                  <p> This is for all the sun lovers. Experience an Alpine adventure in the Swiss summer on Mount Rigi whilst enjoying a meal and admire the views of the Swiss Alps or take a boat ride on Lake Lucerne. </p>
+              </div>
+          </div>
+      </div>
+      </figure>
+    </div>
+    <div class="blog-section">
+      <figure>
+        <img src="Images/city-highlights.png" alt="Restaurants to visit"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Zurich City Highlights </h5>
+              </div>
+              <div class="flip-card-back">
+                  <p> Exploring Zurich on the city highlights tour. Enjoy sights of the Swiss National Museum, Zurich Opera House and the Old Town. </p>
+              </div>
+          </div>
+      </div>
+      </figure>
+    </div>
+    <div class="blog-section">
+      <figure>
+        <img src="Images/lindt.png" alt="Autumn in Switzerland"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Home of chocolate </h5>
+              </div>
+              <div class="flip-card-back">
+                  <p> Chocolate Chocolate Chocolate. Can never get enough. So taking a trip to the Lindt Home of Chocolate is a must. </p>
+              </div>
+          </div>
+      </div>
+      </figure>
+    </div>
+    <div class="blog-section">
+      <figure>
+        <img src="Images/shore.png" alt="Must visit historical places"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Lake Zurich </h5>
+              </div>
+              <div class="flip-card-back">
+                  <p> Taking a ferry ride along Lake Zurich during the summer is one for the bucketlist. Visiting landmarks such as  Lindenhof and Grossmünster whilst gaining insight into the city's history and culture. </p>
+              </div>
+          </div>
+      </div>
+      </figure>
+    </div>
+    <div class="blog-section">
+      <figure>
+        <img src="Images/ice-palace.png" alt="Winter in Switzerland"/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h5> Jungfraujoch </h5>
+              </div>
+              <div class="flip-card-back">
+                  <p> Enjoying a magnificent view from Europe's highest train station over the Aletsch Glacier and visiting the Ice Palace, and the Sphinx Observation Terrace.  </p>
+              </div>
+          </div>
+      </div>
+      </figure>
+    </div>
+      </figure>
+     </div>
   </div>
 </div>
   </main>
