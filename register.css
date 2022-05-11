@@ -1,5 +1,8 @@
 /* For register section - accessed through footer */
 
+main {
+    height: 100%;
+}
 
 .background {
     background-color: rgb(40, 39, 39);
