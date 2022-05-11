@@ -48,7 +48,7 @@
 }
 
 .open-side-btn {
-    position: fixed; /* can change to absolute if not wanting it fixed on side of page*/
+    position: absolute; 
     top: 5%;
     right: 4%;
     cursor: pointer;
